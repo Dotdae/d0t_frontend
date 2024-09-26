@@ -13,7 +13,7 @@ A simple web app to manage employees.
 Install with npm
 
 ```bash 
-  cd d0t
+  cd d0t_frontend
   npm install
   ng s -o
 ```
