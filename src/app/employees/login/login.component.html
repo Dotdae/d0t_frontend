@@ -7,22 +7,25 @@
       <!--Número empleado-->
       <div class="relative flex items-center">
         <label class="text-gray-800 text-[13px] bg-white absolute px-2 top-[-9px] left-[18px] font-semibold">Ingresa tu número de empleado</label>
-        <input type="number"
-          class="px-4 py-6 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" />
+        <input
+        type="number"
+        name="number"
+        [(ngModel)]="employeeNumber"
+          class="px-12 py-7 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" />
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#C2C2C2" class="w-[18px] h-[18px] absolute left-4"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM360-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm178-280q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560q17 0 28.5 11.5T400-520q0 17-11.5 28.5T360-480Zm120 0Z"/></svg>
       </div>
       <!--Contraseña empleado-->
       <div class="relative flex items-center mt-8">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" class="w-[18px] h-[18px] absolute left-4" fill="#C2C2C2"><path d="M280-400q-33 0-56.5-23.5T200-480q0-33 23.5-56.5T280-560q33 0 56.5 23.5T360-480q0 33-23.5 56.5T280-400Zm0 160q-100 0-170-70T40-480q0-100 70-170t170-70q67 0 121.5 33t86.5 87h352l120 120-180 180-80-60-80 60-85-60h-47q-32 54-86.5 87T280-240Zm0-80q56 0 98.5-34t56.5-86h125l58 41 82-61 71 55 75-75-40-40H435q-14-52-56.5-86T280-640q-66 0-113 47t-47 113q0 66 47 113t113 47Z"/></svg>
         <label class="text-gray-800 text-[13px] bg-white absolute px-2 top-[-9px] left-[18px] font-semibold">Ingresa tu contraseña</label>
         <input type="Password"
-          class="px-4 py-6 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" />
-        <svg xmlns="http://www.w3.org/2000/svg" fill="#bbb" stroke="#bbb" class="w-[18px] h-[18px] absolute left-4 cursor-pointer" viewBox="0 0 128 128">
-          <path d="M64 104C22.127 104 1.367 67.496.504 65.943a4 4 0 0 1 0-3.887C1.367 60.504 22.127 24 64 24s62.633 36.504 63.496 38.057a4 4 0 0 1 0 3.887C126.633 67.496 105.873 104 64 104zM8.707 63.994C13.465 71.205 32.146 96 64 96c31.955 0 50.553-24.775 55.293-31.994C114.535 56.795 95.854 32 64 32 32.045 32 13.447 56.775 8.707 63.994zM64 88c-13.234 0-24-10.766-24-24s10.766-24 24-24 24 10.766 24 24-10.766 24-24 24zm0-40c-8.822 0-16 7.178-16 16s7.178 16 16 16 16-7.178 16-16-7.178-16-16-16z" data-original="#000000"></path>
-        </svg>
+        name="password"
+        [(ngModel)]="employeePassword"
+          class="px-12 py-7 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" />
       </div>
       <!--Button section-->
       <div class="mt-12">
-        <button type="button" class="w-full shadow-xl py-2.5 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none">
+        <button type="button" class="w-full shadow-xl py-2.5 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none" (click)="login()">
           Iniciar sesión
         </button>
       </div>
