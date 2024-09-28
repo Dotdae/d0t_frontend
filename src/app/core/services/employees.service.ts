@@ -20,4 +20,9 @@ export class EmployeesService {
     return this.http.post("http://localhost:4000/api/login", employee, {'headers': this.headers});
   }
 
+  createEmployee(employee: any): Observable<any>{
+    return this.http.post("http://localhost:4000/api/employees", employee, {'headers': this.headers});
+
+  }
+
 }
