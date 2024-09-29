@@ -27,7 +27,7 @@ export class LoginComponent {
 
     this.api.login(employee).subscribe((data) => {
       console.log(data);
-      this.router.navigate(['/dashboard']);
+      this.router.navigate(['/dashboard/init']);
 
     })
 
