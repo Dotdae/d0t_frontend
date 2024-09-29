@@ -10,6 +10,7 @@
       <input
       type="text"
       name="name"
+      [(ngModel)]="employeeName"
         class="px-12 py-7 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#C2C2C2" class="w-[18px] h-[18px] absolute left-4"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM360-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm178-280q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560q17 0 28.5 11.5T400-520q0 17-11.5 28.5T360-480Zm120 0Z"/></svg>
     </div>
@@ -19,6 +20,7 @@
       <input
       type="number"
       name="age"
+      [(ngModel)]="employeeAge"
         class="px-12 py-7 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#C2C2C2" class="w-[18px] h-[18px] absolute left-4"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM360-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm178-280q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560q17 0 28.5 11.5T400-520q0 17-11.5 28.5T360-480Zm120 0Z"/></svg>
     </div>
@@ -28,6 +30,7 @@
       <input
       type="text"
       name="address"
+      [(ngModel)]="employeeAddress"
       class="px-12 py-7 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#C2C2C2" class="w-[18px] h-[18px] absolute left-4"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM360-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm178-280q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560q17 0 28.5 11.5T400-520q0 17-11.5 28.5T360-480Zm120 0Z"/></svg>
     </div>
@@ -37,12 +40,24 @@
       <input
       type="number"
       name="salary"
+      [(ngModel)]="employeeSalary"
         class="px-12 py-7 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" />
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 -960 960 960" fill="#C2C2C2" class="w-[18px] h-[18px] absolute left-4"><path d="M560-520h280v-200H560v200Zm140-50-100-70v-40l100 70 100-70v40l-100 70ZM80-120q-33 0-56.5-23.5T0-200v-560q0-33 23.5-56.5T80-840h800q33 0 56.5 23.5T960-760v560q0 33-23.5 56.5T880-120H80Zm556-80h244v-560H80v560h4q42-75 116-117.5T360-360q86 0 160 42.5T636-200ZM360-400q50 0 85-35t35-85q0-50-35-85t-85-35q-50 0-85 35t-35 85q0 50 35 85t85 35ZM182-200h356q-34-38-80.5-59T360-280q-51 0-97 21t-81 59Zm178-280q-17 0-28.5-11.5T320-520q0-17 11.5-28.5T360-560q17 0 28.5 11.5T400-520q0 17-11.5 28.5T360-480Zm120 0Z"/></svg>
-    </div>
+     </div>
+      <!--Rol-->
+      <div class="relative flex items-center mb-6">
+        <label for="roles" class="text-gray-800 text-[13px] bg-white absolute px-2 top-[-9px] left-[18px] font-semibold">Selecciona un rol</label>
+        <select class="px-12 py-7 bg-white w-full text-sm border-2 border-gray-200 focus:border-blue-600 rounded-md outline-none" name="rol" [(ngModel)]="employeeRol">
+          @for (rol of roles; track rol.id){
+          <option [ngValue]="rol.name">
+            {{ rol.name }}
+          </option>
+          }
+        </select>
+       </div>
     <!--Button section-->
     <div class="mt-2">
-      <button type="button" class="w-full shadow-xl py-2.5 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none">
+      <button type="button" class="w-full shadow-xl py-2.5 px-4 text-sm tracking-wider font-semibold rounded-md text-white bg-blue-600 hover:bg-blue-700 focus:outline-none" (click)="register()">
         Registrar empleado
       </button>
     </div>
