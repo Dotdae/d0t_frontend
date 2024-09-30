@@ -12,8 +12,6 @@ import { EmployeesService } from '../../core/services/employees.service';
 })
 export class EmployeeSignupComponent {
 
-
-
   roles = [{
     id: 1,
     name: "Supervisor",
@@ -21,7 +19,6 @@ export class EmployeeSignupComponent {
     id: 2,
     name: "Empleado",
   }];
-
 
   employeeName: string = '';
   employeeAge: number = 0;

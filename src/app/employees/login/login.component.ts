@@ -20,17 +20,19 @@ export class LoginComponent {
 
   login(){
 
-    const employee = {
-      employeeNumber: this.employeeNumber,
-      employeePassword :this.employeePassword
-    }
+    this.api.login(this.employeeNumber, this.employeePassword).subscribe({
 
-    this.api.login(employee).subscribe((data) => {
-      console.log(data);
-      this.router.navigate(['/dashboard/init']);
+      next: (data) => {
+        console.log(data);
+        localStorage.setItem('username', data.nombre)
+        localStorage.setItem('rol', data.rol)
+        this.router.navigate(['/dashboard/init']);
+      },
+      error: (err) =>{
+        console.error(err);
+      }
 
     })
-
   }
 
 }
